@@ -12,3 +12,8 @@ class Hero():
 sniper = Hero("sniper", 100, 10)
 
 print(sniper.info)
+
+# But if we replace info with new instantiation, we can do this
+sniper.info = "info"
+# This is make sniper.info just raise string value "info" because self.info occur like a variable
+print(sniper.info)
